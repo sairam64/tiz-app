@@ -1,0 +1,169 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family: Verdana,sans-serif;
+	height:100%;
+		background-color:#ffffff;
+
+}
+
+#container{
+	
+	height: 100%;
+	
+	background-color:#ffffff;
+	margin:0px;
+	padding:0px;
+	
+	
+}
+
+#header{
+		background-color:#8AC007;
+		height:45px;
+		text-align:center;
+		width:100%;
+		
+		line-height: 40px;  
+	
+}
+
+#def_car{
+		background-color:#304F54;
+	height:45px;
+		text-align:center;
+		width:100%;
+		color:#F7F7F7;
+		line-height: 45px;  
+	
+}
+
+#footer{
+	width:100%;
+	bottom:1px;
+	height:5px;
+	text-align: center;
+	line-height: 15px;
+	color:#140b14;
+	position: relative;
+	
+}
+.box{
+	width:40%;
+	height:135px;
+	line-height: 135px;
+	text-align:center;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:20px;
+	margin-bottom:20px;
+	 border: 1px solid;
+    border-radius: 5px;
+		border-color: #69B8C2; 
+		color:#F7F7F7;  
+}
+.three_boxes{
+	width:24.5%;
+	height:85px;
+	line-height: 85px;
+	text-align:center;
+	margin-left:13px;
+	margin-right:13px;
+	margin-top:20px;
+	margin-bottom:20px;
+	 border: 1px solid;
+    border-radius: 5px;
+		border-color: #69B8C2;
+		font-size:5px;
+		
+		color:#F7F7F7;
+		float:left; 
+}
+#box2{
+ 	float:right; 
+}
+#box1{
+	float:left;
+}
+.form{
+	color:#29808A;
+	margin:7px;
+
+}
+.form tr{
+	margin:3px;
+	height:55px;
+	width:100px;
+	line-height: 15px;
+	
+}
+#def_car_form tr td{
+	
+}
+
+.trans{
+/* 	  background-color: Transparent; */
+            background-repeat:no-repeat;
+            border: 1px solid;
+    border-radius: 5px;
+/* 		border-color: #69B8C2; */
+		width:75px;
+		height:35px;
+		background: #fff;
+  	 color:#8AC007;
+		
+           
+}
+.tab_width{
+	width:70%;
+}
+table tr td{
+	width:70%;
+}
+input{
+	width:130px;
+	padding:0px;
+	margin:0px;
+}
+
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	border: 1.5px solid #8AC007;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background-color:#ffffff;
+	}
+	.circle
+{
+	margin:15px;
+width:40%;
+height:85%;
+border-radius:50%;
+font-size:15px;
+color:#8AC007;
+border: 1.5px solid #8AC007;
+line-height:130px;
+text-align:center;
+float:left;
+background:#fff
+}
+
+#middle_circle{
+	width:100%;
+	height:85%;
+	margin-left:24%;
+}
+#reminders{
+	float:right;
+	background:#fff;
+	
+}
+
+ul{
+	list-style-type: none;
+}
+.but{
+	margin:3.5%;
+}
