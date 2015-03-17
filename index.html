@@ -8,6 +8,8 @@
  
 <script src="./js/jquery-1.9.1.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/car_input.js"></script>
+<script src="./js/Dexie.min.js"></script>
  <link rel="stylesheet" href="css/default.css" />
  
     
@@ -166,18 +168,18 @@ Enter Car Details
 
   <tr>
  <td class="tab_width">Model Name</td><td>
-    <input type="text" ></td><td></td></tr>
+    <input type="text" id = "mdl_name"></td><td></td></tr>
    
   
    
   <tr>
  <td class="tab_width"> Year</td><td>
-    <input type="text" ></td><td></td></tr>
+    <input type="number" id = "mdl_year"></td><td></td></tr>
    
    
     <tr>
- <td class="tab_width">  <button class="trans colors" >Save</button></td><td>
-    <button class="trans colors" >Cancel</button></td></tr>
+ <td class="tab_width">  <button class="trans colors" id = "save_btn">Save</button></td><td>
+    <button class="trans colors" id = "cancel_btn">Cancel</button></td></tr>
 </table>
 </div>
 
