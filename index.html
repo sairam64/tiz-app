@@ -10,84 +10,12 @@
 <script src="./js/main.js"></script>
 <script src="./js/car_input.js"></script>
 <script src="./js/Dexie.min.js"></script>
+<script src="./js/jsbullshit.js"></script>
  <link rel="stylesheet" href="css/default.css" />
  
     
 <script>
-$(document).ready(function(){
-	$("#car_detail").hide();
-	$("#servicing").hide();
-	$("#car_list").hide();
-	$("#add_vehicle").hide();
-	$("#edit_vehicle").hide();
-	$("#delete_vehicle").hide();
-	
-	//dasdsa
-    $("#add_fuel").click(function(){
 
-    	$("#servicing").hide();
-        $("#home").hide();
-        $("#car_detail").show();
-        
-    });
-    $("#servicing_menu").click(function(){
-        
-        $("#home").hide();
-        $("#servicing").show();
-        $("#car_detail").hide();
-        
-    });
-  $("#select_car").click(function(){
-        
-        $("#home").hide();
-        
-        $("#car_list").show();
-        $("#car_detail").hide();
-        
-    });
-  $("#add").click(function(){
-	  $("#add_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
-      
-  });
-
-
-
-  $("#edit").click(function(){
-	  $("#edit_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
-      
-  });
-
-
-  $("#delete").click(function(){
-	  $("#delete_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
-      
-  });
-  
-
-
-
-    
-    $(".colors").hover(function(){
-   	 $(this).css('background', '#8AC007');
-   	 $(this).css('color', '#fff');
-   
-   },
-   
-   function(){
-   	$(this).css('background', '#fff');
-  	 $(this).css('color', '#8AC007');
-       
-   });
-});
 </script>
 </head>
 
@@ -99,7 +27,7 @@ $(document).ready(function(){
 Menu
 <div id="reminders">as</div>
 </div> 
-
+<div id="place_holder">
 <div id="home">
 <div class="circle colors" id="add_fuel">Add Fuel</div>
 <div class="circle colors" id="servicing_menu">Servicing</div>
@@ -108,50 +36,15 @@ Menu
 <div class="circle colors">Filters</div>
 
 </div>
-
-
-<div id="car_list">
-<div>
-<ul>
-<li>  <input type="radio">sd</li>
-<li><input type="radio">dfg</li>
-</ul>
-</div>
-<div>
- <button class="trans but colors" id="add" >Add</button>
-  <button class="trans but colors" id="edit">Edit</button>
-   <button class="trans but colors" id="delete">Delete</button>
-</div>
 </div>
 
 
 
 
 
-<div id="servicing">
-<div id="def_car">
-Add Service
-</div>
- <div class="form">
- <table class"">
- <tr>
- <td class="tab_width">Date:</td><td><input type="date" value="2010-12-16;"></td></tr>
-  <tr>
- <td class="tab_width">  Odometer:</td><td>
-    <input type="number"></td><td>Km</td></tr>
 
 
- <td class="tab_width">  Total Cost:</td><td>
-    <input type="number"></td><td>Rs</td></tr>
- 
-  <tr>
- <td class="tab_width">  Service Center</td><td>
-    <input type="text" ></td><td></td></tr>
-   
-   <tr>
- <td class="tab_width">  <button class="trans colors" >Save</button></td><td>
-    <button class="trans colors" >Cancel</button></td></tr>
-    </table></div></div>
+
     
     
     
@@ -244,37 +137,7 @@ Edit Car Details
     
     
     
-<div id="car_detail"><div id="def_car">
-Default car
-</div>
 
-<div class="form">
- 
- <table class"">
- <tr>
- <td class="tab_width">Date:</td><td><input type="date" value="2010-12-16;"></td></tr>
-  <tr>
- <td class="tab_width">  Odometer:</td><td>
-    <input type="number"></td><td>Km</td></tr>
-   <tr>
- <td class="tab_width"> Qty:</td><td>
-    <input type="number" ></td><td>Ltr</td></tr>
-
- <td class="tab_width">  Price:</td><td>
-    <input type="number"></td><td>Rs</td></tr>
- 
-  <tr>
- <td class="tab_width">  Total Cost:</td><td>
-    <input type="number" ng-model="user.lastName"></td><td>RS</td></tr>
-   
-   <tr>
- <td class="tab_width">  <button class="trans colors" >Save</button></td><td>
-    <button class="trans colors" >Cancel</button></td></tr>
-    </table>
-  
-</div>
-
- </div>
 </div>
 </body>
 </html>
