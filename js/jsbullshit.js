@@ -13,7 +13,7 @@ $(document).ready(function(){
 //    	$("#servicing").hide();
 //        $("#home").hide();
 //        $("#car_detail").show();
-    	//$('#place_holder').load('add_fuel.html #car_detail'); 
+    	$('#place_holder').load('add_fuel.html #car_detail'); 
         
     });
     $("#servicing_menu").click(function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
 //        $("#home").hide();
 //        $("#servicing").show();
 //        $("#car_detail").hide();
-    	// $('#place_holder').load('servicing.html #servicing'); 
+    	 $('#place_holder').load('servicing.html #servicing'); 
         
     });
   $("#select_car").click(function(){
@@ -39,29 +39,32 @@ $(document).ready(function(){
         
     });
   $("#add").click(function(){
-	  $("#add_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
+//	  $("#add_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      $('#place_holder').load('add_car.html #add_vehicle'); 
       
   });
 
 
 
   $("#edit").click(function(){
-	  $("#edit_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
+//	  $("#edit_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      $('#replace_list').load('edit_car.html #edit_vehicle'); 
       
   });
 
 
   $("#delete").click(function(){
-	  $("#delete_vehicle").show();
-      $("#home").hide();
-      $("#car_list").hide();
-      $("#car_detail").hide();
+//	  $("#delete_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      $('#replace_list').load('delete_car.html #delete_vehicle'); 
       
   });
   
