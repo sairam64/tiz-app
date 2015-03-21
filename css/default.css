@@ -188,8 +188,12 @@ ul{
 .bgcolor1{
 	 border: 1px solid;
  border-color: #00ff00; 
-	 
-	
-
 
 	}
+	
+	#reminders{
+	
+	}
+	img{
+	width:45px;
+	height:45px;}
