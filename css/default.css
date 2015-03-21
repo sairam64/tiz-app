@@ -90,38 +90,39 @@ body{
 	margin:7px;
 
 }
-.form tr{
-	margin:3px;
+ li{
+	
 	height:55px;
 	width:100px;
 	line-height: 15px;
 	
 }
-#def_car_form tr td{
-	
-}
+
 
 .trans{
+	width: 70%;
+  height: 45px;
 /* 	  background-color: Transparent; */
             background-repeat:no-repeat;
             border: 1px solid;
     border-radius: 5px;
 /* 		border-color: #69B8C2; */
-		width:75px;
-		height:35px;
+		
 		background: #fff;
   	 color:#8AC007;
 		
            
 }
 .tab_width{
-	width:70%;
+width:42%;
+float:left;
 }
-table tr td{
-	width:70%;
+ul li{
+	width:100%;
+	  line-height: 55px;
 }
-input{
-	width:130px;
+#adding_fuel input{
+	width:45%;
 	padding:0px;
 	margin:0px;
 }
@@ -137,7 +138,7 @@ input{
 	}
 	.circle
 {
-	margin:15px;
+	margin:12px;
 width:40%;
 height:85%;
 border-radius:50%;
@@ -163,7 +164,32 @@ background:#fff
 
 ul{
 	list-style-type: none;
+	padding-left: 0px;
 }
 .but{
 	margin:3.5%;
 }
+.buttons{
+	width:50%;
+	
+	float:left;
+	text-align: center;
+}
+#height_setting{
+	  height: 250px;
+  overflow-y: scroll;
+}
+.bgcolor{
+
+
+ 
+		
+}
+.bgcolor1{
+	 border: 1px solid;
+ border-color: #00ff00; 
+	 
+	
+
+
+	}
