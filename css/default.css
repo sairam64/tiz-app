@@ -24,7 +24,7 @@ body{
 		text-align:center;
 		width:100%;
 		
-		line-height: 40px;  
+		line-height: 45px;  
 	
 }
 
@@ -120,6 +120,7 @@ float:left;
 ul li{
 	width:100%;
 	  line-height: 55px;
+	 
 }
 #adding_fuel input{
 	width:45%;
@@ -164,7 +165,7 @@ background:#fff
 
 ul{
 	list-style-type: none;
-	padding-left: 0px;
+	padding-left: 10px;
 }
 .but{
 	margin:3.5%;
@@ -176,12 +177,16 @@ ul{
 	text-align: center;
 }
 #height_setting{
-	  height: 250px;
+	  height: 230px;
   overflow-y: scroll;
+  width: 100%;
+ 
+  
 }
 .bgcolor{
 
-
+	 border-bottom: 1px solid;
+ border-bottom-color: #00ff00; 
  
 		
 }
@@ -192,8 +197,21 @@ ul{
 	}
 	
 	#reminders{
+	line-height: 5px;
 	
 	}
 	img{
 	width:45px;
-	height:45px;}
+	 
+	height:45px;
+	}
+	
+
+	
+input{
+	margin:5px;
+	
+}
+.form input{
+	width: 50%;
+}

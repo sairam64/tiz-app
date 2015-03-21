@@ -88,6 +88,33 @@ $(document).ready(function(){
       
   });
   
+  $("#reminders").click(function(){
+	  $("#place_holder").load("reminder.html"); 
+//	  $("delete_car.html #delete_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      //$('#replace_list').load('delete_car.html #delete_vehicle'); 
+      
+  });
+  $("#add_reminder").click(function(){
+	  $("#place_holder").load("add_reminder.html"); 
+//	  $("delete_car.html #delete_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      //$('#replace_list').load('delete_car.html #delete_vehicle'); 
+      
+  });
+  $("#edit_reminder").click(function(){
+	  $("#place_holder").load("edit_reminder.html"); 
+//	  $("delete_car.html #delete_vehicle").show();
+//      $("#home").hide();
+//      $("#car_list").hide();
+//      $("#car_detail").hide();
+      //$('#replace_list').load('delete_car.html #delete_vehicle'); 
+      
+  });
 
 
 
@@ -103,4 +130,16 @@ $(document).ready(function(){
   	 $(this).css('color', '#8AC007');
        
    });
+    
+    $("#height_setting li").hover(function(){
+      	 $(this).css('background', '#00ff00');
+      	 $(this).css('color', '#fff');
+      
+      },
+      
+      function(){
+      	$(this).css('background', '#fff');
+     	 $(this).css('color', '#8AC007');
+          
+      });
 });
