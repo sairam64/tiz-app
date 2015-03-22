@@ -41,5 +41,6 @@ var init = function () {
     backEventListener = backEvent;
 };
 
-$(document).bind( 'pageinit', init );
+//$(document).bind( 'pageinit', init );
+window.onload = init;
 $(document).unload( unregister );

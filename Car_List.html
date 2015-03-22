@@ -12,6 +12,28 @@
 <script src="./js/Dexie.min.js"></script>
 <script src="./js/jsbullshit.js"></script>
  <link rel="stylesheet" href="css/default.css" />
+ 
+ <script>
+var mydb = openDatabase("vehdb", "1.0", "A Database of Cars I Like", 1024 * 1024);
+mydb.transaction(function(t) {
+    t.executeSql("SELECT * FROM veh_tab", [], updateList);
+});
+function updateList(transaction, results) {
+    var i;
+    var R = "<ul>";
+     for (i = 0; i < results.rows.length; i++) {
+            //Get the current row
+            var row = results.rows.item(i);
+            R += '<li><input type="radio">'+row.model+'</li>';
+           // listholder.innerHTML += "<li>" + row.make + " - " + row.model + " (<a href='javascript:void(0);' onclick='deleteCar(" + row.id + ");'>Delete Car</a>)";
+        }
+     R += "</ul>";
+     console.log(R);
+     $("#m_list").empty();
+     $("#m_list").append(R);
+     $("#m_list").trigger('create');
+}
+</script>
 
 </head>
 <body>
@@ -19,14 +41,10 @@
 <div id="car_list">
 <div id="replace_list">
 <div id="height_setting">
-<ul >
-<li class="bgcolor">  <input type="radio">sd</li>
-<li class="bgcolor"><input type="radio">dfg</li>
-<li>  <input type="radio">sd</li>
-<li><input type="radio">dfg</li>
-<li>  <input type="radio">sd</li>
-<li><input type="radio">dfg</li>
-</ul>
+<div id = "m_list">
+
+</div>
+
 </div>
 <div>
  <button class="trans but colors" id="add" >Add</button>

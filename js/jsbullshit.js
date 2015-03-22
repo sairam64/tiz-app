@@ -142,4 +142,8 @@ $(document).ready(function(){
      	 $(this).css('color', '#8AC007');
           
       });
+    
+    //Add radio btns at carlist page
+    
+    
 });
