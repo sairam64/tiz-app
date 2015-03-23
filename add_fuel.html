@@ -8,6 +8,7 @@
 <script src="./js/jquery-1.9.1.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/car_input.js"></script>
+<script src="./js/fuel_input.js"></script>
 <script src="./js/Dexie.min.js"></script>
 <script src="./js/jsbullshit.js"></script>
  <link rel="stylesheet" href="css/default.css" />
@@ -21,13 +22,13 @@ Default car
  
     <form id="adding_fuel">
     <ul>
-     <li><div class="tab_width"> Date:</div><input type="date"></li>
-    <li><div class="tab_width">Odometer</div><input type="number">Km</li>
+     <li><div class="tab_width"> Date:</div><input type="date" id = "fl_date"></li>
+    <li><div class="tab_width">Odometer</div><input type="number" id = "fl_odo">Km</li>
    
-      <li><div class="tab_width"> Qty:</div><input type="number" >Ltr</li>
-        <li><div class="tab_width">Price:</div><input type="number">Rs</li>
-          <li><div class="tab_width">Total Cost:</div><input type="number">Rs</li>
-          <li><div class="buttons"><button class="trans colors" >Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
+      <li><div class="tab_width"> Qty:</div><input type="number" id = "fl_ltr">Ltr</li>
+        <li><div class="tab_width">Price:</div><input type="number"id = "fl_price">Rs</li>
+          <li><div class="tab_width">Total Cost:</div><input type="number" id = "fl_cst">Rs</li>
+          <li><div class="buttons"><button class="trans colors" id = "fl_save" >Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
     </ul>
     </form>
     

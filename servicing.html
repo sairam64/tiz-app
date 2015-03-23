@@ -8,6 +8,7 @@
 <script src="./js/jquery-1.9.1.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/car_input.js"></script>
+<script src="./js/service_input.js"></script>
 <script src="./js/Dexie.min.js"></script>
 <script src="./js/jsbullshit.js"></script>
  <link rel="stylesheet" href="css/default.css" />
@@ -20,13 +21,13 @@ Add Service
  <div class="form">
  <form id="adding_fuel">
     <ul>
-     <li><div class="tab_width"> Date:</div><input type="date" value="2010-12-16;"></li>
-    <li><div class="tab_width">Odometer</div><input type="number">Km</li>
+     <li><div class="tab_width"> Date:</div><input type="date" id = "sr_date"></li>
+    <li><div class="tab_width">Odometer</div><input type="number" id = "sr_dist">Km</li>
    
-      <li><div class="tab_width"> Total Cost:</div><input type="number" >Rs</li>
-        <li><div class="tab_width">Service Center</div><input type="text"></li>
+      <li><div class="tab_width"> Total Cost:</div><input type="number" id = "sr_cost">Rs</li>
+        <li><div class="tab_width">Service Center</div><input type="text" id = "sr_center"></li>
           
-          <li><div class="buttons"><button class="trans colors" >Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
+          <li><div class="buttons"><button class="trans colors" id = "sr_save">Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
     </ul>
     </form></div></div>
 </body>

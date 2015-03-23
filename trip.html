@@ -8,6 +8,7 @@
 <script src="./js/jquery-1.9.1.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/car_input.js"></script>
+<script src="./js/trip_input.js"></script>
 <script src="./js/Dexie.min.js"></script>
 <script src="./js/jsbullshit.js"></script>
  <link rel="stylesheet" href="css/default.css" />
@@ -18,17 +19,17 @@
     <form id="adding_fuel">
     <ul>
     
-     <li ><div class="tab_width">Trip Name</div><input type="text" ></li>
+     <li ><div class="tab_width">Trip Name</div><input type="text" id = "tr_name"></li>
      <li class="bgcolor1">Departure</li>
-     <li ><div class="tab_width">Date/Time:</div><input type="datetime" ></li>
-    <li ><div class="tab_width">Odometer</div><input type="number">Km</li>
-     <li><div class="tab_width">Location</div><input type="text"></li>
+     <li ><div class="tab_width">Date/Time:</div><input type="datetime" id = "tr_ddat"></li>
+    <li ><div class="tab_width">Odometer</div><input type="number" id = "tr_dodo">Km</li>
+     <li><div class="tab_width">Location</div><input type="text"id = "tr_dloco"></li>
    
    <li class="bgcolor1">Arrival</li>
-        <li ><div class="tab_width">Date/Time:</div><input type="datetime" ></li>
-    <li ><div class="tab_width">Odometer</div><input type="number">Km</li>
-     <li><div class="tab_width">Location</div><input type="text"></li>
-          <li><div class="buttons"><button class="trans colors" >Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
+        <li ><div class="tab_width">Date/Time:</div><input type="datetime" id = "tr_adat"></li>
+    <li ><div class="tab_width">Odometer</div><input type="number" id = "tr_aodo">Km</li>
+     <li><div class="tab_width">Location</div><input type="text" id = "tr_aloco"></li>
+          <li><div class="buttons"><button class="trans colors" id = "tr_save">Save</button></div><div class="buttons"><button class="trans colors" >Cancel</button></div></li>
     </ul>
     </form>
     
