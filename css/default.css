@@ -9,7 +9,7 @@ body{
 
 #container{
 	
-	height: 100%;
+	height: 80%;
 	
 	background-color:#ffffff;
 	margin:0px;
@@ -22,8 +22,9 @@ body{
 		background-color:#8AC007;
 		height:45px;
 		text-align:center;
-		width:100%;
 		
+		  width: 85.9%;
+  float: left;
 		line-height: 45px;  
 	
 }
@@ -35,6 +36,8 @@ body{
 		width:100%;
 		color:#F7F7F7;
 		line-height: 45px;  
+		  position: relative;
+    display:inline-block;
 	
 }
 
@@ -87,7 +90,10 @@ body{
 }
 .form{
 	color:#29808A;
-	margin:7px;
+	padding:7px;
+	  position: relative;
+    display:inline-block;
+      width: 95%;
 
 }
  li{
@@ -159,13 +165,19 @@ background:#fff
 }
 #reminders{
 	float:right;
-	background:#fff;
+
 	
+}
+#logs{
+		float:left;
+		padding-left:20px;
+
 }
 
 ul{
 	list-style-type: none;
 	padding-left: 10px;
+	  margin-top: 0px;
 }
 .but{
 	margin:3.5%;
@@ -186,13 +198,14 @@ ul{
 .bgcolor{
 
 	 border-bottom: 1px solid;
- border-bottom-color: #00ff00; 
+ border-bottom-color: #000; 
  
 		
 }
 .bgcolor1{
-	 border: 1px solid;
- border-color: #00ff00; 
+	 border-bottom: 1px solid;
+ border-color: #000; 
+ font-variant:small-caps; 
 
 	}
 	
@@ -215,3 +228,45 @@ input{
 .form input{
 	width: 50%;
 }
+
+.menu {
+	height:40px;
+		  position: relative;
+    display:inline-block;
+	
+		text-align:center;
+		width:100%;
+		
+		line-height: 40px;  
+	
+}
+
+
+
+
+#list1{
+	height:370px;
+	overflow:scroll;
+	
+}
+#list3{
+height:370px;
+	overflow:scroll;
+} 
+#list2{
+height:370px;
+	overflow:scroll;
+}
+
+
+.log_li_bottom ul li{
+		 border-bottom: 1px solid;
+ border-color: #000; 
+}
+
+.li_wid li{
+	width:30px;
+	display: inline;
+padding :15px;
+}
+

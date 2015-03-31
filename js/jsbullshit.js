@@ -1,32 +1,32 @@
 $(document).ready(function(){
-	  
-//	$("add_fuel.html #car_detail").hide();
-//	$("servicing.html #servicing").hide();
-//	$("Car_List.html #car_list").hide();
-//	$("add_car.html #add_vehicle").hide();
-//	$("edit_car.html #edit_vehicle").hide();
-//	$("delete_car.html #delete_vehicle").hide();
+
 	
 
+	 $("#logs").click(function(){
+		 $("#men").css('color', '#000');
+	      	 $(this).css('color', '#fff');
+	      	 $("#place_holder").load("Logs.html"); 
+	 });
+	 
+
+	 $("#men").click(function(){
+		 $("#logs").css('color', '#000');
+	      	 $(this).css('color', '#fff');
+	      	 $("#place_holder").load("home.html"); 
+	 });
+	
     $("#add_fuel").click(function(){
     	$(this).css('background', '#8AC007');
       	 $(this).css('color', '#fff');
     	  $("#place_holder").load("add_fuel.html"); 
-//    	$("#servicing").hide();
-//        $("#home").hide();
-      //  $("#car_detail").show();
-    	//$('#place_holder').load('add_fuel.html #car_detail'); 
+ 
         
     });
     $("#servicing_menu").click(function(){
     	$(this).css('background', '#8AC007');
       	 $(this).css('color', '#fff');
     	 $("#place_holder").load("servicing.html"); 
-        
-//        $("#home").hide();
-//        $("servicing.html #servicing").show();
-//        $("#car_detail").hide();
-    	// $('#place_holder').load('servicing.html #servicing'); 
+
         
     });
     $("#trip").click(function(){
@@ -117,7 +117,6 @@ $(document).ready(function(){
   });
 
 
-
     
     $(".colors").hover(function(){
    	 $(this).css('background', '#8AC007');
@@ -132,7 +131,31 @@ $(document).ready(function(){
    });
     
     $("#height_setting li").hover(function(){
-      	 $(this).css('background', '#00ff00');
+      	 $(this).css('background', '#f8f8f8');
+      	 $(this).css('color', '#000');
+      
+      },
+      
+      function(){
+      	$(this).css('background', '#fff');
+//     	 $(this).css('color', '#8AC007');
+          
+      });
+    $(".log_li_bottom li").hover(function(){
+     	 $(this).css('background', '#f8f8f8');
+     	 $(this).css('color', '#000');
+     
+     },
+     
+     function(){
+     	$(this).css('background', '#fff');
+//    	 $(this).css('color', '#8AC007');
+         
+     });
+    
+    
+    $(".colors_b").hover(function(){
+      	 $(this).css('background', '#000');
       	 $(this).css('color', '#fff');
       
       },
@@ -142,8 +165,67 @@ $(document).ready(function(){
      	 $(this).css('color', '#8AC007');
           
       });
+       
     
-    //Add radio btns at carlist page
     
     
+    
+   
+//    
+//    $("#menu1").click(function(){
+//    	
+// 
+//     	 $("#list1").load("list.html"); 
+//     	 $("#list2").hide();
+//});
+//    $("#menu2").click(function(){
+//    	
+// 
+//    	
+//    	 $("#list2").load("list.html");
+//    	 $("#list1").hide();
+//       	 $("#list3").hide();
+//    	
+//});
+//    
+//    $("#menu3").click(function(){
+//   
+//
+//   	
+//   	 $("#list3").load("list.html");
+////	 $("#list1").hide();
+////   	 $("#list2").hide();
+//});
+//  
+    
+	  $("#list2").hide("slow");
+      $("#list3").hide("slow");
+      $("#list1").hide("slow");
+    $("#menu1").click(function () {
+    	  $("#list2").hide("slow");
+          $("#list3").hide("slow");
+        $("#list1").show();
+        
+      
+    });
+
+    $("#menu2").click(function () {
+
+        $("#list1").hide("slow");
+        $("#list3").hide("slow");
+        $("#list2").show();
+        
+    });
+
+    $("#menu3").click(function () {
+    	$("#list1").hide("slow");
+        $("#list2").hide("slow");
+        $("#list3").show();
+        
+    });
+
+  
+    
+
+
 });
