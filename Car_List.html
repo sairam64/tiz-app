@@ -24,7 +24,9 @@ function updateList(transaction, results) {
      for (i = 0; i < results.rows.length; i++) {
             //Get the current row
             var row = results.rows.item(i);
-            R += '<li><input type="radio" name="radio" value="row.model">'+row.model+'</li>';
+            var val=row.id;
+            
+            R += '<li><input type="radio" name="radio" value='+val+'>'+row.model+'</li>';
            // listholder.innerHTML += "<li>" + row.make + " - " + row.model + " (<a href='javascript:void(0);' onclick='deleteCar(" + row.id + ");'>Delete Car</a>)";
         }
      R += "</ul>";
@@ -49,7 +51,7 @@ function updateList(transaction, results) {
 <div>
  <button class="trans but colors" id="add" >Add</button>
 <button class="trans but colors" id="edit">Edit</button>
-   <button class="trans but colors" >Delete</button>
+   <button class="trans but colors" id="delete" >Delete</button>
 </div>
 </div>
 </div>
